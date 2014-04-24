@@ -9,7 +9,7 @@ You can connect to port 8081 on the server you're running things from and issue 
 	var socket = io.connect('http://localhost:8081');
 	socket.emit('command', {
 		'type': 'movement',
-		'movement': movement
+		'movement': 'base_cw' // moves the base clockwise for 1 second
 	});
 
 Feel free to fork and butcher the code. Requires `usb`, `socket.io` and `underscore`.
