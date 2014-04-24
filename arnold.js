@@ -98,11 +98,6 @@
 			history[movement] = [];
 		}
 		
-		//
-		_.each(history, function(item) {
-			console.log(item.command);
-		});
-		
 		// Execute the command
 		arnold.controlTransfer(0x40, 6, 0x100, 0, new Buffer(cmd), function() {
 					
